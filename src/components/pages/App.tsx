@@ -2,6 +2,7 @@ import React from 'react';
 import Formulario from '../Formulario';
 import Lista from '../Lista';
 import style from './App.module.scss'
+import Cronometro from '../Cronometro';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className={style.AppStyle}>
       <Formulario />
       <Lista />
+      <Cronometro />
     </div>
   );
 }
