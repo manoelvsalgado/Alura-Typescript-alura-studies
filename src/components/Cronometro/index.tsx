@@ -15,7 +15,7 @@ export default function Cronometro({ selecionado }: Props) {
 
     useEffect (() =>{
        if(selecionado?.tempo) {
-        setTempo(tempoParaSegundos(selecionado?.tempo))
+        setTempo(tempoParaSegundos(selecionado.tempo))
         }
     },[selecionado])
     return (
@@ -23,7 +23,7 @@ export default function Cronometro({ selecionado }: Props) {
             <p className={style.titulo}>Escolha um card e inicie o cronômetro</p>
             Tempo: {tempo}
             <div className={style.relogioWrapper}>
-                <Relogio/>
+                <Relogio tempo={tempo}/>
             </div>
             <button>
                 Começar
